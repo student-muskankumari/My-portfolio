@@ -1,0 +1,460 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FDF4FF; /* Soft Pink */
+    color: #2E2E2E; /* Deep Gray */
+    line-height: 1.6;
+}
+
+a {
+    color: #9D4EDD; /* Bold Purple */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #F72585; /* Bright Pink */
+}
+
+h1, h2, h3 {
+    color: #2E2E2E; /* Deep Gray */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #7B2CBF; /* Bold Purple */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Soft Shadow */
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.navbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: #9D4EDD; /* Bold Purple */
+}
+
+/* Intro Section */
+.intro-section {
+    padding: 50px 20px;
+    background-color: #F5EDFF; /* Lavender Blush */
+}
+
+.intro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 30px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.intro-text {
+    max-width: 600px;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #FDF4FF; /* Soft Pink */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding: 20px;
+    text-align: left; /* Align content to the left */
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.project-card h3 {
+    margin-top: 15px;
+}
+
+.project-card p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-links a {
+    background-color: #9D4EDD;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block; /* Make the links inline block */
+}
+
+.project-links a:hover {
+    background-color: #F72585;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+#showMoreBtn {
+    background-color: #9D4EDD;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+#showMoreBtn:hover {
+    background-color: #F72585;
+}
+
+/* Initially hide project cards after the 3rd */
+.project-card:nth-child(n+4) { /* Corrected selector to start hiding from 4th element */
+    display: none;
+}
+
+/* Experience Section Styles */
+.experience-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #F5EDFF; /* Optional: Background color */
+}
+
+.experience-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.experience-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden; /* Important for smooth transitions */
+    transition: max-height 0.3s ease; /* Transition for height */
+}
+
+.experience-title {
+    padding: 20px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.experience-title h3 {
+    margin-bottom: 5px;
+}
+
+.experience-description {
+    padding: 0 20px;
+    text-align: left;
+    max-height: 0; /* Initially hidden */
+    overflow: hidden;
+    transition: max-height 0.3s ease; /* Transition for height */
+}
+
+.experience-description ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.experience-item.active .experience-description {
+    max-height: 500px; /* Adjust max height as needed */
+    padding: 20px;
+}
+
+.experience-item.active {
+        margin-bottom: 20px;
+        padding: 10px;
+
+}
+/*skills-section*/
+.style
+.skills-section {
+  padding: 50px 20px;
+  background-color: #f5f7fa;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.skills-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.skill-box {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.skill-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.skill-box h3 {
+  font-size: 20px;
+  color: #007acc;
+  margin-bottom: 12px;
+}
+
+.skill-box p {
+  color: #444;
+  line-height: 1.6;
+  font-size: 15px;
+}
+ 
+
+
+/* Upcoming Projects Section */
+.upcoming-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #F5EDFF;
+}
+
+.upcoming-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
+
+
+/* certifiactes */
+#certificates {
+  padding: 40px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.certificate-list {
+  list-style: none;
+  padding: 0;
+}
+
+.certificate-list li {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.certificate-list a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.certificate-list a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #FDF4FF;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-card a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2E2E2E;
+}
+
+.contact-card i {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Scroll to Top Button */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #F72585;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #9D4EDD;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #7B2CBF;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .navbar-menu li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .intro-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
