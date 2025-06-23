@@ -2,7 +2,7 @@
 
 This is my personal portfolio website built using HTML, CSS, and JavaScript, designed to showcase my projects, skills, experiences, and how to get in touch with me.
 
-🔗 Live Site:- [View Portfolio](https://my-portfolio-git-main-muskans-projects-d5e92c9d.vercel.app/)
+🔗 Live Site:- [View Portfolio](https://my-portfolio-muskans-projects-d5e92c9d.vercel.app/)
 
 
 📌 Overview
@@ -33,7 +33,7 @@ This is my personal portfolio website built using HTML, CSS, and JavaScript, des
 - Platform:- Vercel  
 - Framework Used:- Other (Static HTML/CSS/JS)
 - Deployed URL:-  
-  [https://my-portfolio-git-main-muskans-projects-d5e92c9d.vercel.app/](https://my-portfolio-git-main-muskans-projects-d5e92c9d.vercel.app/)
+  [https://my-portfolio-git-main-muskans-projects-d5e92c9d.vercel.app/](https://my-portfolio-muskans-projects-d5e92c9d.vercel.app/)
 
 
 🔮 Future Improvements
