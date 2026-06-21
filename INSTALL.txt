@@ -1,0 +1,23 @@
+PORTFOLIO V2 UPDATE — install instructions
+==========================================
+
+Copy these 5 files on top of your existing project:
+
+  src/sections/Hero.jsx         (overwrites existing)
+  src/sections/Projects.jsx     (overwrites existing)
+  src/components/Section.jsx    (overwrites existing)
+  src/styles/globals.css        (overwrites existing)
+  public/images/profile.png     (new folder + file)
+
+Restart dev server if running (Ctrl+C then `npm run dev`).
+
+What changed:
+  - Hero now shows your profile photo on the right with gradient ring
+    and two floating status badges
+  - Projects cards are fully clickable — the whole card opens the live
+    demo (or GitHub if no live link). Corner icons still work as
+    secondary actions without triggering the main click
+  - Tilt effect is snappier (stiffness 150 -> 300) so clicks feel instant
+  - Typography bumped across the board: body 17px, section headings
+    larger, project titles 3-4xl, labels more legible
+  - Section padding slightly more generous for breathing room
